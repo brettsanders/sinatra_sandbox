@@ -1,0 +1,12 @@
+Web Questions : 
+
+- if you have a slider, how does it create the value and pass it through
+- how would you create a form to work with joined table structures
+  - example : 
+    - parent and children data in same form
+
+- HTTP Verbs : get, post, puts, delete
+
+- does PUTS or DELETE actually do anything in sinatra?
+(In Rails, uses JavaScript )
+
