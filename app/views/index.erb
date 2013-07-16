@@ -1,9 +1,29 @@
-<h1>you're on index bro</h1>
-<p><%= params %></p>
 
-<form id="talk-to-grandma" action="/grandma" method="post">
-  Say something to Grandma:
-  <br>
-  <input type="text" name="user_input">
-  <input type="submit" value="Say it!">
-</form>
+  <h1>you're on index bro</h1>
+  <% if params != {} %>
+  <p><%= params %></p>
+  <% end %>
+  <p>Get Request to cool_url</p>
+  <form action="/cool_url" method="get">
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+  </form>
+
+  <p>Post Request to cool_url</p>
+  <form action="/cool_url" method="post">
+    <input type="textarea" name="broarea">
+    <input type="radio" name="brobutton">
+    <input type="checkbox" name="brocheck">
+    <input type="select" name="broselect">
+    <input type="text" name="user_input">
+    <input type="submit" value="Say it!">
+
+
+
+
+    <br>
+
+    <input type="text" name="why[title]">
+    <input type="text" name="not[price]">
+    <textarea name="okay[description]"></textarea>
+  </form>
